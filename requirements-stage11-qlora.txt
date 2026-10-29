@@ -1,0 +1,15 @@
+# GPU-oriented extras used by legacy local QLoRA / DPO experiments and by
+# the repository's reward-model training stack when a GPU environment is
+# available. They are not required for the public CPU smoke surface.
+
+torch>=2.1
+transformers>=4.40
+accelerate>=0.29
+peft>=0.11
+datasets>=2.18
+sentencepiece>=0.1.99
+safetensors>=0.4
+scipy>=1.10
+
+# Optional but recommended for 4-bit QLoRA (GPU only).
+bitsandbytes>=0.43
